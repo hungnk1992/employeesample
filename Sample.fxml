@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <TabPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Employees">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="197.0" layoutY="14.0" text="Employees Management">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="27.0" layoutY="55.0" text="Select Options" />
+                        <ChoiceBox fx:id="idEmpGender" layoutX="27.0" layoutY="81.0" prefWidth="150.0" />
+                        <Button layoutX="27.0" layoutY="129.0" mnemonicParsing="false" onAction="#confirm" text="Show Emps" />
+                        <ComboBox fx:id="idEmpNum" layoutX="212.0" layoutY="81.0" prefWidth="150.0" promptText="NumEmp" />
+                        <TextArea fx:id="idContent" layoutX="27.0" layoutY="167.0" prefHeight="186.0" prefWidth="549.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Department">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
